@@ -1,0 +1,14 @@
+{
+  "name": "rp-log-playground",
+  "version": "0.0.1",
+  "description": "Some tests to experiment with logging on ReportPortal.io",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "devDependencies": {
+    "@reportportal/agent-js-mocha": "^5.0.0",
+    "mocha": "^7.0.1",
+    "chai": "^4.2.0"
+  }
+}

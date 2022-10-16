@@ -37,8 +37,8 @@ describe('Table Logging', function () {
                           <thead valign='top' style='background : #19607D; color: white;'>
                             <tr valign='top'>`;
     //Create the header of the table based on the object's properties of the first object in the list
-    let objectProperties = Object.entries(arrayOfObject[0]);
-    for (const property in objectProperties) {
+    //let objectProperties = Object.entries(arrayOfObject[0]);
+    for (const property in arrayOfObject[0]) {
       htmlTable += `          <th style='position: sticky; top: 0; background: #19607D; color: white;'>
                                 <b>
                                   <div style ='width: 100 px; height: 30px; overflow: auto;'>
@@ -50,9 +50,9 @@ describe('Table Logging', function () {
     htmlTable += `          </tr>
                           </thead>
                           <tbody>`;
-    for (const row in arrayOfObject) {
+    for (const row of arrayOfObject) {
       htmlTable += `        <tr>`;
-      for (const property in objectProperties) {
+      for (const property in row) {
         htmlTable += `          <td>${row[property]}</td>`;
       }
       htmlTable += `        </tr>`;

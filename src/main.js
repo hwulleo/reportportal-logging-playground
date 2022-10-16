@@ -21,7 +21,7 @@ const mochaMain = new Mocha({
   reporter: '@reportportal/agent-js-mocha',
   reporterOptions: {
     endpoint: 'https://reportportal.hwulleo.tech/api/v1',
-    token: '',
+    token: process.env.RP_TOKEN,
     launch: 'Mocha logging test',
     project: 'table_logging',
     description: 'Log a table nicely',

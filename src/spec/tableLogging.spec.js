@@ -64,4 +64,42 @@ describe('Table Logging', function () {
     return htmlTable;
   }
 
+
+  /*
+  The Rules:
+  
+  - All data in the table should be able to scroll into view
+
+  - If the data in a cell is beyond 1000 characters, it should be truncated.
+
+  - The table should have a sticky header (the header remains at the top when scrolling vertically)
+
+  - Each cell in the table takes up a maximum size of 200px wide and 50px tall (I am open to changing these values based on looks, just want there to be some limit in place on the size of a cell).
+
+  - If no cell in a column is at the maximum cell size value, the size of the cells in the column are set to the size of the biggest cell. (cells are only as large as they have to be)
+
+  - If there is no data in a column, the width of the column is only as big as the width of the header text in that column.
+
+  - If the ReportPortal log expander is clicked, the table should fit within the window. The vertical and horizontal scollbars should be visible.
+
+  - It is not necessary to use the HTML table elements. If the rendered HTML looks like a table, but is made of only <div> tags, that is fine.
+
+  - Alternating the background colors of the rows for readability would be super cool
+
+  - The fewer the amount of tags and text within those tags the better (only use as much HTML and CSS as necessary)
+  */
+  it('Your attempt at making a table', function() {
+
+    let listOfObjects = [
+
+    ]
+    let htmlTable = toHtmlTableNew(listOfObjects);
+    logger.info(htmlTable);
+  })
+
+  function toHtmlTableNew(arrayOfObject)
+  {
+
+  }
+
 });

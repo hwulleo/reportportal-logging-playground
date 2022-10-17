@@ -37,7 +37,6 @@ describe('Table Logging', function () {
                           <thead valign='top' style='background : #19607D; color: white;'>
                             <tr valign='top'>`;
     //Create the header of the table based on the object's properties of the first object in the list
-    //let objectProperties = Object.entries(arrayOfObject[0]);
     for (const property in arrayOfObject[0]) {
       htmlTable += `          <th style='position: sticky; top: 0; background: #19607D; color: white;'>
                                 <b>
